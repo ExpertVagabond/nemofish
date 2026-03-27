@@ -55,7 +55,7 @@
         <div :style="s.pricingHeader">
           <span :style="s.diamondIcon">◇</span> Pricing
         </div>
-        <div :style="s.pricingGrid">
+        <div class="pricing-cards" :style="s.pricingGrid">
           <div :style="s.pricingCard">
             <div :style="s.pricingTier">Free Tier</div>
             <div :style="s.pricingAmount">$0</div>
