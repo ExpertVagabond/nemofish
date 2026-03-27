@@ -1,0 +1,17 @@
+# Override: Use NVIDIA NIM instead of local Ollama
+# Run with: docker compose up -d nemofish neo4j
+services:
+  nemofish:
+    depends_on:
+      neo4j:
+        condition: service_healthy
+      # Remove ollama dependency — using NIM cloud API
+    environment:
+      - LLM_BASE_URL=https://integrate.api.nvidia.com/v1
+      - OPENAI_API_BASE_URL=https://integrate.api.nvidia.com/v1
+      - EMBEDDING_BASE_URL=https://integrate.api.nvidia.com
+
+  # Don't start ollama — not needed with NIM
+  ollama:
+    profiles:
+      - local-only
