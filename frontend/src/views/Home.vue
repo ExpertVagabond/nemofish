@@ -2,7 +2,7 @@
   <div class="home-container">
     <!-- Top Navigation Bar -->
     <nav class="navbar" :style="s.navbar">
-      <div class="nav-brand" :style="s.navBrand">NEMOFISH</div>
+      <div class="nav-brand" :style="s.navBrand"><img src="/favicon.png" alt="NemoFish" :style="{ width: '32px', height: '32px', borderRadius: '6px', marginRight: '8px', verticalAlign: 'middle' }" />NEMOFISH</div>
       <div class="nav-links" :style="s.navLinks">
         <span :style="s.nimBadge">NVIDIA NIM</span>
         <a href="https://github.com/ExpertVagabond/nemofish" target="_blank" class="github-link" :style="s.githubLink">
@@ -42,7 +42,7 @@
         <div class="hero-right" :style="s.heroRight">
           <div class="logo-container" :style="s.logoContainer">
             <div :style="s.heroLogoPlaceholder">
-              <div :style="s.logoText">NF</div>
+              <img src="/favicon.png" alt="NemoFish" :style="{ width: '200px', height: '200px', borderRadius: '24px', objectFit: 'cover' }" />
               <div :style="s.logoSubtext">NemoFish</div>
             </div>
           </div>
